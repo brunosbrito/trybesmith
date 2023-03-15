@@ -22,3 +22,12 @@ export interface IUserToken {
   id?: number,
   username: string,
 }
+
+export interface Auth {
+  id: number,
+  userename: string,
+}
+
+export interface IOrder {
+  productsIds: number[]
+}

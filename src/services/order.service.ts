@@ -6,6 +6,12 @@ const getOrders = async () => {
   return order;
 };
 
-const orderSerivce = { getOrders };
+const registerOrder = async (userId: number, productsIds: number[]) => {
+  const newOrder = await ordersModel.registerOrder(userId, productsIds);
+  if (!newOrder) return false;
+  return { userId, productsIds };
+};
 
-export default orderSerivce;
+const orderSerivce = { getOrders, registerOrder };
+
+export default orderSerivce; 
