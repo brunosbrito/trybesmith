@@ -1,7 +1,7 @@
 import { NextFunction, Request, Response } from 'express';
 import { IUserLogin } from '../interfaces';
 
-export default function validateBody(
+export default function validateLogin(
   req: Request,
   res: Response,
   next: NextFunction,

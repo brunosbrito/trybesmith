@@ -39,7 +39,7 @@ const validateAmount = (amount: string) => {
   return null;
 };
 
-export default function validateBody(
+export default function validateProduct(
   req: Request,
   res: Response,
   next: NextFunction,
